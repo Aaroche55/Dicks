@@ -1,8 +1,5 @@
 package com.dicks;
 
-
-  
-
 class Functions{
 
   public static int add(int lhs, int rhs){
@@ -35,6 +32,7 @@ class Functions{
       case '/':
       case '+': return 2;
       case '!': return 1;
+      default: return 0;
     }
   }
 
@@ -46,6 +44,7 @@ class Functions{
       case '/': return div(args[0], args[1]);
       case '*': return mul(args[0], args[1]);
       case '!': return fact(args[0]);
+      default: return 0;
     }
   }
 }
